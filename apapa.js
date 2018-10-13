@@ -117,7 +117,7 @@ myreadstream.on('data', (chunk)=>{
 var fs = require('fs');
 var myreadstream = fs.createReadStream(__dirname + '/readme.txt', 'utf8');
 var mywritestream = fs.createWriteStream(__dirname+'/writeme.txt', 'utf8');
-//create a listener to listen for data 
+//create a listener to listen for data
 myreadstream.pipe(mywritestream);
 */
 
