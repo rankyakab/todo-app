@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>the coolest Contact</h1>
+    <p>you wont find a website better anywhere else</p>
+    <p>
+      <%= query.dept %>
+    </p>
+    <form id="contact-form" action="/contact" method="POST">
+      <label for="who"> who do you want to contact</label>
+      <input type="text" name="who" value=""/>
+      <label for="department">Which Department</label>
+      <input type="text" name="department" value="">
+      <label for="email">Your email</label>
+      <input type="text" name="email" value="">
+      <input type="submit" name="submit" value="submit">
+    </form>
+  </body>
+</html>

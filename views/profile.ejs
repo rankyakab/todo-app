@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>welcome to the profile of <%=person %></h1>
+    <p> <strong>AGE:</strong> <%=obj.age %></p>
+    <p> <strong>JOB:</strong> <%=obj.job %></p>
+     <h2>Hobbies</h2>
+     <ul>
+       <% obj.hobbies.forEach((item)=>{ %>
+         <li> <%=item %> </li>
+
+    <%   }) %>
+     </ul>
+  </body>
+</html>
